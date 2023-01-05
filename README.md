@@ -34,7 +34,7 @@
 
 This project was developed with the following technologies:
 
-- [Vite](https://vitejs.dev/) framework TypeScript starter repository.
+- [Vite](https://vitejs.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 
 ## 💻 Project
