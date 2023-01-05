@@ -8,11 +8,11 @@ const Login = () => {
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-
   const submitHandler = (e: SyntheticEvent) => {
     e.preventDefault()
     console.log('submit')
   }
+  
   return (
     <FormContainer>
       <h1>Login </h1><br/>

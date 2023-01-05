@@ -1,37 +1,16 @@
-import { useRef } from "react";
-import Webcam from "react-webcam";
+import React, { useState } from "react";
 import FormContainer from '../components/FormContainer'
 import Button from 'react-bootstrap/Button';
-
-const videoConstraints = {
-    width: 1280,
-    height: 720,
-    facingMode: "user"
-  };
+import WebcamCapture from '../components/WebcamCapture'
 
 
 const CamSignup = () => {
-    const webcam = useRef<Webcam>(null);
+
+      
   return (
     <FormContainer>
     <h1>Facial - Cadastro</h1>
-       <Webcam
-    audio={false}
-    height={400}
-    screenshotFormat="image/png"
-    width={500}
-    videoConstraints={videoConstraints}
-  >
-    {({ getScreenshot }) => (
-      <Button variant="success"
-        onClick={() => {
-          const imageSrc = getScreenshot()
-        }}
-      >
-        Capturar
-      </Button>
-    )}
-  </Webcam>
+    <WebcamCapture/>
     </FormContainer>
   )
 }

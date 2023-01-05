@@ -16,9 +16,9 @@ const CamSignup = () => {
     <h1>Facial - Login</h1>
     <Webcam
     audio={false}
-    height={400}
+    height={500}
     screenshotFormat="image/png"
-    width={500}
+    width={600}
     videoConstraints={videoConstraints}
   >
     {({ getScreenshot }) => (
